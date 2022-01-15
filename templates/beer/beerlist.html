@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+<a href="/beers/create">Add a beer</a>
+
+<section class="all-beer">
+    {% for beer in beer_items %}
+    <div class="beer-item">
+        <div class="info">
+            <h2>{{ beer['name'] }}</h2>
+            <a href="/beers/{{beer['id']}}">Show</a>
+            <a href="/beers/{{beer['id']}}/edit">Edit</a>
+        </div>
+        <img src="{{beer['image_url']}}" alt="{{beer['miscellaneous']}}" />
+        <div class="miscellaneous">{{beer['miscellaneous']}}</div>
+    </div>
+    {% endfor %}
+</section>
+{% endblock content %}

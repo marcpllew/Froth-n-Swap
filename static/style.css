@@ -1,0 +1,6 @@
+.beer-item img {
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+    border: 0.5em solid white;
+}

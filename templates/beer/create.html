@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block content %}
+<form method="post" action="/beers">
+    <h2>Create beer</h2>
+    <div>
+        <label for="name">Name</label>
+        <input id="name" name="name"></textarea>
+    </div>
+
+    <div>
+        <label for="style">style</label>
+        <textarea id="style" name="style"></textarea>
+    </div>
+
+    <div>
+        <label for="type">type</label>
+        <textarea id="type" name="type"></textarea>
+    </div>
+
+    <div>
+        <label for="miscellaneous">miscellaneous</label>
+        <textarea id="miscellaneous" name="miscellaneous"></textarea>
+    </div>
+
+    <div>
+        <label for="image_url">Image Url</label>
+        <input id="image_url" name="image_url" />
+    </div>
+
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
+{% endblock content %}

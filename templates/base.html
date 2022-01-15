@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Froth'n Swap</title>
+        <link rel="stylesheet" href="/static/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Froth'n Swap</h1>
+            <nav>
+                <div>
+                    <a href="/">Home</a>
+                </div>
+                <div>
+                    <a href="/beers">Menu</a>
+                </div>
+                {% if session.get('user_id') %}
+                <div>
+                    <a href="/logout">Logout</a>
+                </div>
+                {% else %}
+                <div>
+                    <a href="/login">Login</a>
+                </div>
+                {% endif %}
+
+                <div>{% if session['user_id'] %} {% else %} {% endif %}</div>
+            </nav>
+        </header>
+        <main>{%block content %}{% endblock content %}</main>
+    </body>
+</html>

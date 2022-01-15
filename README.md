@@ -1,4 +1,4 @@
-# flask-app
+# Froth'n Swap
 
 Game can be accessed by following link:
 
@@ -14,6 +14,10 @@ or github, search for marcpllew/'.......'
 -   Flask
 -   Heroku
 -   SQL
+
+## Issues
+
+-   After renaming Git repo, Heroku and local file, app would not lauch, giving an error of the current file could not be found. I eventualy solved this by removing the apostrophe from name, froth'n swap to froth-n-swap.
 
 ## Planning
 
@@ -43,8 +47,15 @@ TinTins/Froth'n Swap
 
 ## Questions
 
--   Data bases local and host. Do i add my tables inside these? On both?
+-
 
--   Do i store acual code inside readme file? LIke JPEG?
+-   Do i store actual code inside readme file? LIke JPEG?
+
+-
 
 -   Where to next?
+
+## to do's
+
+-   update data base tables.
+-   Remove 'styles\_' and replace with acual styles
