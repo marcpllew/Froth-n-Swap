@@ -32,7 +32,7 @@ def get_all_beer():
 
     return results
 
-# UPDATE BEER IN DB
+# UPDATE FOOD IN DB
 
 def update_beer(id, name, image_url, type, miscellaneous, style):
     database.sql_write("UPDATE beers set name = %s, image_url = %s, type = %s, miscellaneous = %s, style = %s,  WHERE id = %s", [

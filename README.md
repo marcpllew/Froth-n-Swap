@@ -45,17 +45,27 @@ TinTins/Froth'n Swap
 
 -   users will then be directed to trading page(for later)
 
+## 15/1
+
+-   Add authentication functionality
+-   Add in tables to data base
+-   add a nave bar using bootsrap
+-   add in some basic CSS styling
+
 ## Questions
 
--
+-   How do i add drop down tabs for styles?
+
+-   create page is not creating
 
 -   Do i store actual code inside readme file? LIke JPEG?
-
--
 
 -   Where to next?
 
 ## to do's
 
--   update data base tables.
--   Remove 'styles\_' and replace with acual styles
+-   update data base tables. (completes)
+-   Remove 'styles\_' and replace with acual styles (completes)
+-   look into drop down boxes with 'style' name for creating new items
+-   abilty to add new beers to data base vier the app
+-   want arrows on pictures to scroll though pics on database
