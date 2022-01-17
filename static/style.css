@@ -41,3 +41,27 @@ name {
     align-items: center;
     gap: 20px;
 }
+
+form {
+    margin: 0 auto;
+    width: 30em;
+}
+
+form > div {
+    margin-block: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+form label,
+form input,
+form textarea {
+    width: 100%;
+}
+form label {
+    font-weight: bold;
+}
+.buttons {
+    font-size: 10;
+    color: red;
+}

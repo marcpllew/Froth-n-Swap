@@ -58,14 +58,27 @@ TinTins/Froth'n Swap
 
 -   create page is not creating
 
+-   edit page is throwing anerror (update_beer() takes 6 positional arguments but 8 were given)
+
 -   Do i store actual code inside readme file? LIke JPEG?
 
--   Where to next?
+-   id numbers are random, and user_id are all the same?
 
 ## to do's
 
--   update data base tables. (completes)
--   Remove 'styles\_' and replace with acual styles (completes)
+-   abilty to add new beers to data base vier the app (this is currently throwing an error when attemted (Method not allowed))
+    -   this was solved by changing request.form.get("name") to session.get("user_id") in beer_controller
+-   Add ability to edit and delete items from DB( throwing same as above error)
+    -   Delete was solved by re-typing the command - @beer_controller.route('/beers/<id>/delete', methods=["POST"]) in beer_controller, possible copy and paste bug?
+    -   Edit was throwing to this error - takes 5 positional arguments but 6 were given. Solved by adjusting and matching all arguments. I then had another error, which was solved my deleting comma.
+-   make arrow buttons functional
+-   arrow buttons should scroll through the data base 1 pic at a time
+-   style and move arrow buttons
 -   look into drop down boxes with 'style' name for creating new items
--   abilty to add new beers to data base vier the app
--   want arrows on pictures to scroll though pics on database
+-   arrow buttons next to pictures to scroll though pics on database
+-   only show the edit button insude that particular item
+
+## for displaying pictures
+
+-   limit and offset (database query to display pictures)
+-   a gallery/carousel in bootstrap (using java script) to display pictures

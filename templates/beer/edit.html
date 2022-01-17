@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" action="/beers/{{ beer['id'] }}">
+    <h2>Edit beer</h2>
+    <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" value="{{beer['name']}}" />
+    </div>
+    
+    <div>
+        <label for="miscellaneous">miscellaneous</label>
+        <textarea id="miscellaneous" name="miscellaneous">{{beer['miscellaneous']}}</textarea>
+    </div>
+
+    <div>
+        <label for="image_url">Image Url</label>
+        <input id="image_url" name="image_url" value="{{beer['image_url']}}"></textarea>
+    </div>
+    <div>
+        <label for="style">style</label>
+        <textarea id="style" name="style">{{beer['style']}}</textarea>
+    </div>
+
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
+<form action="/beers/{{beer['id']}}/delete" method="POST">
+    <button type="submit">
+        Delete
+    </button>
+</form>
+{% endblock content %}

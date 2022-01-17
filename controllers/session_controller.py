@@ -17,7 +17,8 @@ def login():
     valid = user and bcrypt.checkpw(password.encode(), user['password'].encode())
     if valid:
         # if they are in the database, we update the session
-        session['user_id'] = user ['id']
+        session['user_id'] = user['id']
+        print(user['id'])
         return redirect('/')
     else:
         #

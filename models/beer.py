@@ -3,13 +3,14 @@ import database
 # INSERT BEERS INTO DB
 
 
-def insert_beer(id, name, image_url, type, miscellaneous, style):
-    database.sql_write("INSERT into beers (name, image_url, type, miscellaneous, style) VALUES (%s, %s, %s, %s, %s);", [
+def insert_beer(user_id, name, image_url, type, miscellaneous, style):
+    database.sql_write("INSERT into beers (user_id, name, image_url, type, miscellaneous, style) VALUES (%s, %s, %s, %s, %s, %s);", [
+        user_id,
         name,
         image_url,
         type,
         miscellaneous,
-        style,
+        style
         
     ])
 
@@ -32,15 +33,18 @@ def get_all_beer():
 
     return results
 
-# UPDATE FOOD IN DB
+# UPDATE BEER IN DB
 
 def update_beer(id, name, image_url, type, miscellaneous, style):
-    database.sql_write("UPDATE beers set name = %s, image_url = %s, type = %s, miscellaneous = %s, style = %s,  WHERE id = %s", [
-        id,
+    database.sql_write("UPDATE beers set name = %s, image_url = %s, type = %s, miscellaneous = %s, style = %s  WHERE id = %s", [
         name,
         image_url,
         type,
         miscellaneous,
-        style
+        style,
+        id
         
     ])
+    # DELETE BEER FROM DB
+def delete_beer(id):
+    database.sql_write("DELETE FROM beers WHERE id = %s", [id])
