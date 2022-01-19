@@ -14,6 +14,8 @@ or github, search for marcpllew/'.......'
 -   Flask
 -   Heroku
 -   SQL
+-   Bootstrap
+-   Splide
 
 ## Issues
 
@@ -21,7 +23,7 @@ or github, search for marcpllew/'.......'
 
 ## Planning
 
-TinTins/Froth'n Swap
+Froth'n Swap
 
 -   user data base
 
@@ -52,31 +54,39 @@ TinTins/Froth'n Swap
 -   add a nave bar using bootsrap
 -   add in some basic CSS styling
 
+## 17/1
+
+-   Add edit, delete and edit functionality
+-   start to research how i can display 1 picture on page and manualy scroll through pictures one at a time
+
+## 19/1
+
+-   Add Carosel funtionality to the app using 'Splide'
+-   Add functionality to loop through all pictures
+-   After getting this to function pictures where all squashed, which required some styling in CSS
+-   Centre pictures on page
+-   remove edit from homepage
+-   remove show from show page
+
 ## Questions
 
--   How do i add drop down tabs for styles?
-
--   create page is not creating
-
--   edit page is throwing anerror (update_beer() takes 6 positional arguments but 8 were given)
-
--   Do i store actual code inside readme file? LIke JPEG?
-
--   id numbers are random, and user_id are all the same?
+-   How do i add drop down tabs for styles? (complete)
+-   Add dropdown box for edit
+-   How to style 'style' input on create page
+-   If i git add, commit then git push heroku main, do i still need to git push?
+-   do i need to update the link i sent as i've changed name since creation?
+-   project reveals?
+-   More explination on ENUM and putting into practice
 
 ## to do's
 
--   abilty to add new beers to data base vier the app (this is currently throwing an error when attemted (Method not allowed))
-    -   this was solved by changing request.form.get("name") to session.get("user_id") in beer_controller
--   Add ability to edit and delete items from DB( throwing same as above error)
-    -   Delete was solved by re-typing the command - @beer_controller.route('/beers/<id>/delete', methods=["POST"]) in beer_controller, possible copy and paste bug?
-    -   Edit was throwing to this error - takes 5 positional arguments but 6 were given. Solved by adjusting and matching all arguments. I then had another error, which was solved my deleting comma.
--   make arrow buttons functional
--   arrow buttons should scroll through the data base 1 pic at a time
--   style and move arrow buttons
--   look into drop down boxes with 'style' name for creating new items
--   arrow buttons next to pictures to scroll though pics on database
--   only show the edit button insude that particular item
+-   find a way to scroll through pictures on page (complete)
+-   scroll through pictures on a loop (completed)
+-   look into drop down boxes with 'style' name for creating new items(complete)
+    -   if incorrect redirect to create page
+-   only a logged in user can create/edit, from controllers?(complete)
+-   Can only delete items when logged in
+-   only show the edit button inside that particular item (complete)
 
 ## for displaying pictures
 

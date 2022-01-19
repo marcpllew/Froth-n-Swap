@@ -1,36 +1,63 @@
 {% extends 'base.html' %} {% block content %}
 
 <section class="all-beer">
-    {% for beer in beer_items %}
-    <div class="beer-item">
-        <div class="info">
-            <h2>{{ beer['name'] }}</h2>
-            <a href="/beers/{{beer['id']}}">Show</a>
-            <a href="/beers/{{beer['id']}}/edit">Edit</a>
-            
-            <section>
-                <div class= "container">
-                    
-                </div>
-            </section>
+    <div id="image-slider" class="splide" data-splide='{"type":"loop"}'>
+        <!-- <div class="splide" data-splide='{"type":"loop"}'></div> -->
 
-        </div>
-        <img src="{{beer['image_url']}}" alt="{{beer['miscellaneous']}}" />
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for beer in beer_items %}
+                <li class="splide__slide">
+                    <div class="beer-item">
+                        <div class="info">
+                            <h2>{{ beer['name'] }}</h2>
+                            <a href="/beers/{{beer['id']}}">Show</a>
+                            <!-- <a href="/beers/{{beer['id']}}/edit">Edit</a> -->
 
-        <!-- <div class="buttons">
-            <button type="button">
-                <img
-                    src="https://cdn-icons-png.flaticon.com/512/318/318477.png"
-                />
-            </button>
-            <button type="button">
-                <img
-                    src="https://cdn-icons-png.flaticon.com/512/560/560449.png"
-                />
-            </button> -->
+                            <section>
+                                <div class="container"></div>
+                            </section>
+                        </div>
+                        <img
+                            style="height: 300px; width: 300px"
+                            src="{{beer['image_url']}}"
+                            alt="{{beer['miscellaneous']}}"
+                        />
+
+                        <!-- <div class="buttons">
+                            <button type="button">
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/318/318477.png"
+                                />
+                            </button>
+                            <button type="button">
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/560/560449.png"
+                                />
+                            </button>
+                        </div> -->
+
+                        <div class="type">{{beer['type']}}</div>
+
+                        <div class="miscellaneous">
+                            {{beer['miscellaneous']}}
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-        <div class="miscellaneous">{{beer['miscellaneous']}}</div>
     </div>
-    {% endfor %}
 </section>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.10/dist/js/splide.min.js"></script>
+<script>
+    new Splide('.splide').mount();
+</script>
+
+<!-- <script>
+    new Splide('.splide', {
+        type: 'loop',
+    });
+</script> -->
+
 {% endblock content %}

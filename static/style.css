@@ -27,7 +27,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 250px;
-    margin: 50px auto;
+    margin: 100px auto;
     text-align: center;
     justify-content: center;
 }
@@ -59,9 +59,13 @@ form textarea {
     width: 100%;
 }
 form label {
-    font-weight: bold;
+    font-weight: unset;
 }
 .buttons {
     font-size: 10;
     color: red;
+}
+
+.miscellaneous {
+    color: rgb(145, 233, 14);
 }
