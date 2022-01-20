@@ -5,10 +5,22 @@
         <h2>{{ beer['name'] }}</h2>
         <div class="description">{{beer['style']}}</div>
 
+        <!-- <a href="/beers/{{beer['id']}}/edit">Edit</a> -->
+
+        <h3>{{ beer['user_id'] }}</h3>
+        <h3>{{ user_id }}</h3>
+        {% if beer['user_id'] == user_id %}
         <a href="/beers/{{beer['id']}}/edit">Edit</a>
+        {% endif %}
+
+        <!-- <a href="/beers/{{beer['id']}}/edit">Edit</a> -->
     </div>
     <img src="{{beer['image_url']}}" alt="{{beer['miscellaneous']}}" />
     <div class="description">{{beer['miscellaneous']}}</div>
 
     {% endblock content %}
 </div>
+
+<!-- {% if beer['user_id'] == user_id %}
+                            <a href="/beers/{{beer['id']}}/edit">Edit</a>
+                            {% endif %} -->

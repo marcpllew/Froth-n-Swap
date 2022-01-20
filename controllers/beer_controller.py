@@ -11,7 +11,7 @@ beer_controller = Blueprint(
 def beers():
     beer_items = get_all_beer()
 
-    return render_template('beerlist.html', beer_items=beer_items)
+    return render_template('beerlist.html', beer_items=beer_items, user_id=session.get("user_id"))
 
 @beer_controller.route('/beers/create')
 def create():

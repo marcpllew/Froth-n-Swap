@@ -15,7 +15,7 @@ or github, search for marcpllew/'.......'
 -   Heroku
 -   SQL
 -   Bootstrap
--   Splide
+-   Splide (CDN)
 
 ## Issues
 
@@ -70,23 +70,25 @@ Froth'n Swap
 
 ## Questions
 
--   How do i add drop down tabs for styles? (complete)
--   Add dropdown box for edit
--   How to style 'style' input on create page
 -   If i git add, commit then git push heroku main, do i still need to git push?
--   do i need to update the link i sent as i've changed name since creation?
+-   do i need to update the Heroku link i sent originaly as i've changed name since creation?
+-   changing database table 'values'
 -   project reveals?
+-   Computer?
 -   More explination on ENUM and putting into practice
 
 ## to do's
 
--   find a way to scroll through pictures on page (complete)
--   scroll through pictures on a loop (completed)
--   look into drop down boxes with 'style' name for creating new items(complete)
-    -   if incorrect redirect to create page
--   only a logged in user can create/edit, from controllers?(complete)
+-   create a create user page
+-   remove create/edit options for users not logged in (do this from controllers?)
 -   Can only delete items when logged in
--   only show the edit button inside that particular item (complete)
+-   Add dropdown box for edit(check this is working)
+-   if drop down boxes options are incorrect redirect to create page
+-   Add another 'style' to datbase ( then add this to dropdown box)
+-   change "type" varchar(30), to (50)
+-   Make a home page
+-   create a back button
+-   displayer user on screen
 
 ## for displaying pictures
 
