@@ -84,11 +84,8 @@ Froth'n Swap
 
 ## to do's
 
--   create a create user page (complete)
 -   remove create/edit options for users not logged in (do this from controllers?)
 -   Can only delete items when logged in
--   Add dropdown box for edit(check this is working)
--   if drop down boxes options are incorrect redirect to create page
 -   Add another 'style' to datbase ( then add this to dropdown box)
 -   change "type" varchar(30), to (50)
 -   Make a home page
