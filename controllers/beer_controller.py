@@ -36,7 +36,7 @@ def insert():
 @beer_controller.route('/beers/<id>')
 def show(id):
     beer = get_beer(id)
-    return render_template('show.html', beer=beer)
+    return render_template('show.html', user_id=session.get("user_id"), beer=beer)
 
 @beer_controller.route('/beers/<id>/edit')
 def edit(id):

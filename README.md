@@ -84,15 +84,18 @@ Froth'n Swap
 
 ## to do's
 
--   remove create/edit options for users not logged in (do this from controllers?)
+-   remove create/edit options for users not logged in (complete)
 -   Can only delete items when logged in
--   Add another 'style' to datbase ( then add this to dropdown box)
--   change "type" varchar(30), to (50)
+-   Add another 'style' to datbase, then add this to dropdown box. (complete)
+-   change "type" varchar(30), to (50) (complete)
 -   Make a home page
 -   create a back button
 -   displayer user on screen
-
-## for displaying pictures
-
--   limit and offset (database query to display pictures)
--   a gallery/carousel in bootstrap (using java script) to display pictures
+-   Add password 'hide' to sign up page (complete)
+-   change beer list to 'gallery'(complete)
+-   order of edit page create page (complete)
+-   start styling,
+    -   options, give everything a class name
+-   does the following commands need to be in beerlist.html or show.html. <h3>{{ beer['user_id'] }}</h3>
+    <h3>{{ user_id }}</h3>
+    -   how can i access these values without displaying them?

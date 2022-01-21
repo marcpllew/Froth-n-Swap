@@ -18,6 +18,12 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+details {
+    background-color: greenyellow;
+    padding: 10px;
+    font-size: 14px;
+}
+
 html,
 body {
     font-size: 15px;
@@ -30,6 +36,8 @@ body {
     margin: 100px auto;
     text-align: center;
     justify-content: center;
+    height: 500px;
+    width: 500px;
 }
 
 name {
@@ -68,4 +76,15 @@ form label {
 
 .miscellaneous {
     color: rgb(145, 233, 14);
+}
+.description {
+    text-align: center;
+    padding: 2%;
+}
+.type {
+    text-align: center;
+    padding: 2%;
+}
+.beer-item {
+    text-align: center; /*not working*/
 }

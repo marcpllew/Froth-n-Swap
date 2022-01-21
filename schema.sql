@@ -24,6 +24,7 @@ CREATE TABLE beers(
     style beer_style not null,
     CONSTRAINT fk_user FOREIGN KEY(user_id) REFERENCES users(id) );
 
+    ALTER TYPE beer_style ADD VALUE 'Wild Fermentation'
 
 
 -- for style's will need to create specific parametres for each then an if statemnet to check if style parameters are true or false. 
