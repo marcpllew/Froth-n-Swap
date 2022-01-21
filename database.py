@@ -24,7 +24,7 @@ def sql_write(query, params):
 
 
 # from original app.py
-conn = psycopg2.connect(DB_URL)
-cur = conn.cursor()
-cur.execute('SELECT 1', [])  # Query to check that the DB connected
-conn.close()
+# conn = psycopg2.connect(DB_URL)
+# cur = conn.cursor()
+# cur.execute('SELECT 1', [])  # Query to check that the DB connected
+# conn.close()
