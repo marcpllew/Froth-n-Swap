@@ -68,6 +68,11 @@ Froth'n Swap
 -   remove edit from homepage
 -   remove show from show page
 
+## 20/1
+
+-   Create a sign in page
+-   add functionality where only logged in user can edit items posted by them
+
 ## Questions
 
 -   If i git add, commit then git push heroku main, do i still need to git push?
@@ -79,7 +84,7 @@ Froth'n Swap
 
 ## to do's
 
--   create a create user page
+-   create a create user page (complete)
 -   remove create/edit options for users not logged in (do this from controllers?)
 -   Can only delete items when logged in
 -   Add dropdown box for edit(check this is working)
