@@ -7,7 +7,8 @@
         <input id="user_id" user_id="user_id"></textarea>
     </div> -->
 
-    <div>
+    
+        <div class="styled-textarea">
         <label for="name">Name</label>
         <input id="name" name="name"></textarea>
     </div>
@@ -18,7 +19,7 @@
     </div> -->
 
 
-    <div>
+    <div class="styled-textarea">
         <label for="style">Style</label>
         <select name="style" id="style">
             <option value=""></option>
@@ -30,23 +31,25 @@
 
 
 
-    <div>
+    <div class="styled-textarea">
         <label for="type">Type</label>
         <textarea id="type" name="type"></textarea>
     </div>
 
-    <div>
+    <div class="styled-textarea">
         <label for="miscellaneous">Miscellaneous</label>
         <textarea id="miscellaneous" name="miscellaneous"></textarea>
     </div>
 
-    <div>
+    <div class="styled-textarea">
         <label for="image_url">Image Url</label>
         <input id="image_url" name="image_url" />
     </div>
 
     <div>
-        <button type="submit">Save</button>
+        <button class="save-button">Save</button>
+        <!-- <button type="submit">Save</button> -->
+        
     </div>
 </form>
 {% endblock content %}

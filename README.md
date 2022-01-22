@@ -73,29 +73,27 @@ Froth'n Swap
 -   Create a sign in page
 -   add functionality where only logged in user can edit items posted by them
 
+## 22/1
+
+-   style edit and create pages
+
 ## Questions
 
--   If i git add, commit then git push heroku main, do i still need to git push?
--   do i need to update the Heroku link i sent originaly as i've changed name since creation?
--   changing database table 'values'
--   project reveals?
--   Computer?
+-   how can i access these values without displaying them?(completed)
+-   accesing background color in css (completed)
+-   accessing heading in css (completed)
+-   picture changed when in show (completed)
+
 -   More explination on ENUM and putting into practice
+does the following commands need to be in beerlist.html or show.html. <h3>{{ beer['user_id'] }}</h3>
+ <h3>{{ user_id }}</h3>
 
 ## to do's
 
--   remove create/edit options for users not logged in (complete)
 -   Can only delete items when logged in
--   Add another 'style' to datbase, then add this to dropdown box. (complete)
--   change "type" varchar(30), to (50) (complete)
 -   Make a home page
 -   create a back button
 -   displayer user on screen
--   Add password 'hide' to sign up page (complete)
--   change beer list to 'gallery'(complete)
--   order of edit page create page (complete)
 -   start styling,
     -   options, give everything a class name
--   does the following commands need to be in beerlist.html or show.html. <h3>{{ beer['user_id'] }}</h3>
-    <h3>{{ user_id }}</h3>
-    -   how can i access these values without displaying them?
+-

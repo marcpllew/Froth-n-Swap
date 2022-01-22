@@ -136,12 +136,12 @@
     -ms-flex-align: center;
     align-items: center;
     background: rgb(220, 224, 219);
-    border: 0;
-    border-radius: 50%;
+    border: 2;
+    border-radius: 100%;
     cursor: pointer;
     display: -ms-flexbox;
     display: flex;
-    height: 2em;
+    height: 5em;
     -ms-flex-pack: center;
     justify-content: center;
     opacity: 0.7;
@@ -149,7 +149,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 2em;
+    width: 5em;
     z-index: 1;
 }
 .splide__arrow svg {

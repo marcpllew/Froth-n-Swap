@@ -1,7 +1,8 @@
 h1 {
     font-family: 'Monoton', cursive;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
+    padding: 40px;
     background: linear-gradient(
         to right,
         #ef5350,
@@ -18,6 +19,18 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+main {
+    --stripe: #cfd8dc;
+    --bg: #e1e1e1;
+
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+        linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+}
+
 details {
     background-color: greenyellow;
     padding: 10px;
@@ -26,18 +39,31 @@ details {
 
 html,
 body {
-    font-size: 15px;
+    /* font-size: 15px; */
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+* {
+    box-sizing: border-box;
+}
+.signup-login {
+    height: 100%;
+    width: 100%;
 }
 
 .beer-item img {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 250px;
+    /* width: 250px; */
     margin: 100px auto;
     text-align: center;
     justify-content: center;
     height: 500px;
-    width: 500px;
+    /* width: 500px; */
 }
 
 name {
@@ -77,14 +103,127 @@ form label {
 .miscellaneous {
     color: rgb(145, 233, 14);
 }
-.description {
+.info {
+    display: flex;
+    justify-content: center;
+    color: #7c795d;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0 0 24px;
     text-align: center;
-    padding: 2%;
 }
+.misc-description {
+    /* text-align: center;
+    padding: 1%;
+    font-size: 15px; */
+    color: #7c795d;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0 0 24px;
+}
+
 .type {
-    text-align: center;
-    padding: 2%;
+    /* text-align: center;
+    padding: 1%;
+    font-size: 20px; */
+    color: #7c795d;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
 }
 .beer-item {
-    text-align: center; /*not working*/
+    text-align: center;
+
+    --stripe: #cfd8dc;
+    --bg: #e1e1e1;
+
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+        linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
 }
+.show-details {
+    color: indigo;
+    text-align: center;
+}
+
+.styled-textarea {
+    width: 500px;
+    height: 100px;
+    border: 3px solid #c9c0c0;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.save-button {
+    background-color: #11c985;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+.login-button {
+    background-color: #11c985;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+.signup-button {
+    background-color: #11c985;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+.edit-save-button,
+.delete-button {
+    display: inline-block;
+    background-color: #11c985;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+/* .delete-button {
+    background-color: #11c985;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+} */
