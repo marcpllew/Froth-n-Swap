@@ -59,7 +59,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     /* width: 250px; */
-    margin: 100px auto;
+    margin: 50px auto;
     text-align: center;
     justify-content: center;
     height: 500px;
