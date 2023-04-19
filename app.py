@@ -13,7 +13,6 @@ app = Flask(__name__)
 # original code 
 # app.config['SECRET_KEY'] = SECRET_KEY
 app.config['SECRET_KEY'] = os.environ.get("DATABASE_URL")
-# postgresql://project_2_database_user:vwgeQjZGDnWpkzvij7x5FjuzaqhRNfXh@dpg-cgmc46bhp8ua8vpbk0mg-a.singapore-postgres.render.com/project_2_database
 
 @app.route('/')
 @app.route('/beerlist')
