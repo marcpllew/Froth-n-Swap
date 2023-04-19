@@ -10,8 +10,10 @@ DB_URL = os.environ.get("DATABASE_URL", "dbname=project2")
 SECRET_KEY = os.environ.get("SECRET_KEY", "password")
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = SECRET_KEY
-
+# original code 
+# app.config['SECRET_KEY'] = SECRET_KEY
+app.config['SECRET_KEY'] = os.environ.get("DATABASE_URL")
+# postgresql://project_2_database_user:vwgeQjZGDnWpkzvij7x5FjuzaqhRNfXh@dpg-cgmc46bhp8ua8vpbk0mg-a.singapore-postgres.render.com/project_2_database
 
 @app.route('/')
 @app.route('/beerlist')
@@ -27,3 +29,4 @@ app.register_blueprint(user_controller)
 
 if __name__ == "__main__":
     app.run(debug=True)
+
